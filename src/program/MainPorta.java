@@ -8,7 +8,7 @@ public class MainPorta {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		Porta porta = new Porta(true, null, 0, 0, 0);
+		Porta porta = new Porta(true, "original", 0, 0, 0);
 		
 			System.out.println("Crie uma porta...");
 			System.out.println();
@@ -24,7 +24,7 @@ public class MainPorta {
 			System.out.println();
 			
 			while (true) {
-			System.out.print("O que deseja fazer?\n1 - pintar a porta\n2 - Abrir a porta\n3- Fechar a porta\n4- verficar se a porta está aberta\n5 - Relatório da porta\n6 - Encerrar aplicação\n>>> ");
+			System.out.print("O que deseja fazer?\n\n1 - pintar a porta\n2 - Abrir a porta\n3- Fechar a porta\n4- verficar se a porta está aberta\n5 - Relatório da porta\n6 - Encerrar aplicação\n>>> ");
 			char res = sc.next().charAt(0);
 			System.out.println();
 			
@@ -49,6 +49,8 @@ public class MainPorta {
 			}
 			else if (res == '5') {
 				System.out.println("A porta criada possui:\n" + porta.dimensaoX + "cm de altura;\n" + porta.dimensaoY + "cm de largura;\n" + porta.dimensaoZ + "cm de grossura;\nEstá pintada na cor " + porta.cor + ";\n" + porta.estaAberta() + ".");
+				System.out.println();
+				System.out.println("|===============|===============|");
 				System.out.println();
 			}
 			else if (res == '6') {
