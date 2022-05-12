@@ -24,7 +24,7 @@ public class MainPorta {
 			System.out.println();
 			
 			while (true) {
-			System.out.print("O que deseja fazer?\n\n1 - pintar a porta\n2 - Abrir a porta\n3- Fechar a porta\n4- verficar se a porta est· aberta\n5 - RelatÛrio da porta\n6 - Encerrar aplicaÁ„o\n>>> ");
+			System.out.print("O que deseja fazer?\n\n1 - pintar a porta\n2 - Abrir a porta\n3- Fechar a porta\n4- verficar se a porta est√° aberta\n5 - Relat√≥rio da porta\n6 - Encerrar aplica√ß√£o\n>>> ");
 			char res = sc.next().charAt(0);
 			System.out.println();
 			
@@ -48,7 +48,8 @@ public class MainPorta {
 				System.out.println();
 			}
 			else if (res == '5') {
-				System.out.println("A porta criada possui:\n" + porta.dimensaoX + "cm de altura;\n" + porta.dimensaoY + "cm de largura;\n" + porta.dimensaoZ + "cm de grossura;\nEst· pintada na cor " + porta.cor + ";\n" + porta.estaAberta() + ".");
+				System.out.println("|===============|===============|");
+				System.out.println("A porta criada possui:\n" + porta.dimensaoX + "cm de altura;\n" + porta.dimensaoY + "cm de largura;\n" + porta.dimensaoZ + "cm de grossura;\nEst√° pintada na cor " + porta.cor + ";\n" + porta.estaAberta() + ".");
 				System.out.println();
 				System.out.println("|===============|===============|");
 				System.out.println();
@@ -58,7 +59,7 @@ public class MainPorta {
 				break;
 			}
 			else {
-				System.out.println("Valor inv·lido, insira novamente...");
+				System.out.println("Valor inv√°lido, insira novamente...");
 				System.out.println();
 				continue;
 			}
